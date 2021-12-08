@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+}
+.text{
+    font-size: 50px;
+    font-weight: 500;
+}
+.text1{
+    margin-left: 30%;
+    background-color: darkorange;
+}
+.text2{
+    margin-left: 3%;
+    background-color: white;
+}
+.text3{
+    margin-left: 3%;
+    background-color: green;
+}
+.sun{
+    background-image: url(./sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-top: -18%;
+    margin-left: 80%;
+   animation: sun-ani 15s infinite ease-in;
+}
+@keyframes sun-ani{
+    100%{transform: translate(-100px,-100px);}
+}
+.sky{
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -4%;
+    width: 200%;
+    height: 500px;
+    overflow-x: hidden;
+}
+
+.buildings{
+    background-image: url(./city.png);
+    width: 200%;
+    height: 400px;
+    margin-top: -2%;
+    background-repeat: repeat-x;
+   
+    animation: build 20s infinite ease-in;
+}
+@keyframes build{
+    100%{transform: translateX(-800px);}
+}
+.road
+{
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    width: 620%;
+    height: 380px;
+    margin-top: -9%;
+    animation: road 10s infinite ease-in;
+}
+@keyframes road{
+    100%{transform: translateX(-8000px);}
+}
+.car{
+    background-image: url(./car.png);
+    background-repeat: no-repeat;
+    width:1100px;
+    height: 500px;
+    position: fixed;
+    top: 35%;
+    left: 21.5%;
+}
+.flag{
+    background-image: url(./indian-flag.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 45%;
+    left: 66%;
+    background-repeat: no-repeat;
+}
+.wheel1{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 63%;
+    left: 26%;
+    animation: wheel 4s infinite ease-in ;
+}
+@keyframes wheel{
+    100%{transform: rotate(360deg);}
+}
+.wheel2{
+    background-image: url(./wheel.png);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 63%;
+    left: 62%;
+    animation: wheel 4s infinite ease-in;
+}
